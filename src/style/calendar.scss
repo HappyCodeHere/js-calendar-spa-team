@@ -1,0 +1,88 @@
+
+
+td {
+  height: 100px;
+  width: 100px;
+}
+
+th {
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+
+    i {
+      color: #fff;
+
+      &.material-icons {
+        font-size: 40px !important;
+      }
+
+      &:hover {
+        color: #2e02aa;
+      }
+    }
+  }
+
+  div {
+    text-align: center;
+
+    span {
+      display: block;
+    }
+
+    .month {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .year {
+
+    }
+  }
+}
+
+.calendar-day {
+  display: block;
+  font-size: 24px;
+  color: #c7234f;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.events {
+  .panel-body {
+    padding: 0;
+    max-height: 100px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0.3em;
+    }
+
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 3px;
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+  }
+}
+
+.event {
+  &.alert {
+    margin-bottom: 0;
+  }
+}
