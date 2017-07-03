@@ -1,5 +1,15 @@
 @import './calendar';
 
+body {
+  background: url('http://img02.deviantart.net/712d/i/2015/231/3/e/flat_landscape_by_eocdesigns-d96dbbn.jpg') center no-repeat;
+  background-size: cover;
+  min-height: 1000px;
+}
+
+.navbar .navbar-right a {
+  height: 30px;
+}
+
 footer {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -8,4 +18,34 @@ footer {
   span {
     color: #ff084a;
   }
+}
+
+
+.list, .day {
+  h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  // padding: 0 10px;
+  // background-color: #fff;
+  // box-shadow: 1px 1px 5px #ccc;
+  width: 500px;
+  margin: 0 auto;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-detail {
+  header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  width: 700px;
+  margin: 0 auto;
 }
