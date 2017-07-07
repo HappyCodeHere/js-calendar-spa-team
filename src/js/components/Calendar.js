@@ -28,6 +28,7 @@ class Calendar {
    */
   renderCalendarHeader() {
     // нарисовать стрелки и месяц/год
+    // повесить на них changeMonth
   }
 
   /**
