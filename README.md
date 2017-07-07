@@ -1,4 +1,4 @@
-Ссылка [myjscoursetasks.surge.sh](myjscoursetasks.surge.sh)
+Ссылка [myjscoursetasks.surge.sh](http://myjscoursetasks.surge.sh)
 
 
 ## Calendar SPA
@@ -31,6 +31,6 @@
 
 много информации в самом коде
 
-Документация [http://myjscoursetasks.surge.sh/calendar%20team%20doc/index.html](myjscoursetasks.surge.sh)
+[Документация](http://myjscoursetasks.surge.sh/calendar%20team%20doc/index.html)
 
 ...
