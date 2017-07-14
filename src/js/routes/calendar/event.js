@@ -9,8 +9,8 @@ const event = {
 
     // добавить форму
     // добавить комментарии
-
+    
   }
 }
 
-export { event };
+//export { event };

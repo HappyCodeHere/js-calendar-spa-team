@@ -7,4 +7,4 @@ const list = {
   }
 }
 
-export { list };
+//export { list };

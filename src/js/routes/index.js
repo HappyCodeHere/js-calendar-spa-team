@@ -6,4 +6,4 @@ const index = {
   }
 }
 
-export { index };
+//export { index };

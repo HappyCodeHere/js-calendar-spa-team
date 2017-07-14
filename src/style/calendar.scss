@@ -1,12 +1,13 @@
-
 table {
   background: #fff;
   box-shadow: 1px 1px 5px #ccc;
+  width: 100%;
 }
 
 td {
   height: 100px;
-  width: 100px;
+  //width: 100px;
+  max-width: 14.2%;
 }
 
 th {
@@ -54,8 +55,8 @@ th {
 }
 
 .calendar-day {
-  display: block;
-  font-size: 24px;
+  /*display: block;*/
+  font-size: 20px;
   color: #c7234f;
   font-weight: bold;
   text-align: center;
@@ -90,3 +91,9 @@ th {
     margin-bottom: 0;
   }
 }
+
+.alert .alert-link {
+    font-size: 14px;
+    font-weight: normal;
+    white-space: pre-wrap;
+  }

@@ -16,11 +16,12 @@ const gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     sourcemaps = require('gulp-sourcemaps'),
 
-    watch = require('gulp-watch'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
 
     rimraf = require('rimraf');
+    
+    runSequence = require('run-sequence');
 
 
 var path = {
@@ -55,7 +56,7 @@ var config = {
     server: {
         baseDir: "./dist"
     },
-    open: false,
+    open: 'local',
     tunnel: false,
     host: 'localhost',
     port: 9000,
@@ -145,33 +146,25 @@ gulp.task('build', [
 ]);
 
 
-gulp.task('watch', function() {
-    watch([path.watch.html], function(event, cb) {
-        gulp.start('html:build');
-    });
-    watch([path.watch.style], function(event, cb) {
-        gulp.start('style:build');
-    });
-    watch([path.watch.js], function(event, cb) {
-        gulp.start('js:build');
-    });
-    watch([path.watch.img], function(event, cb) {
-        gulp.start('image:build');
-    });
-    watch([path.watch.fonts], function(event, cb) {
-        gulp.start('fonts:build');
-    });
-    watch([path.watch.libs], function(event, cb) {
-        gulp.start('libs:build');
-    });
+gulp.task('watch', function(callback) {
+    gulp.watch(path.watch.html, ['html:build']);
+    gulp.watch(path.watch.style,['style:build']);
+    gulp.watch(path.watch.js,   ['js:build']);
+    gulp.watch(path.watch.img,  ['image:build']);
+    gulp.watch(path.watch.fonts,['fonts:build']);
+    gulp.watch(path.watch.libs, ['libs:build']);
+    callback();
 });
 
-gulp.task('webserver', function () {
+gulp.task('webserver', function (callback) {
     browserSync(config);
+    callback();
 });
 
-gulp.task('clean', function (cb) {
-    rimraf(path.clean, cb);
+gulp.task('clean', function (callback) {
+    rimraf(path.clean, callback);
 });
 
-gulp.task('default', ['build', 'webserver', 'watch']);
+gulp.task('default', function(callback) {
+    runSequence('clean', 'build', 'webserver', 'watch', callback);
+});
