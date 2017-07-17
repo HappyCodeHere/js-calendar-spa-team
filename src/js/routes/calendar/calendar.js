@@ -1,4 +1,4 @@
-import Event from '../../components/Event';
+//import Event from '../../components/Event';
 
 const calendar = {
   name: 'calendar',
@@ -14,4 +14,4 @@ const calendar = {
   }
 }
 
-export { calendar };
+//export { calendar };

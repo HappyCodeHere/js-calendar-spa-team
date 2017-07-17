@@ -33,4 +33,4 @@ class StatusCheckbox {
   }
 }
 
-export default StatusCheckbox;
+//export default StatusCheckbox;

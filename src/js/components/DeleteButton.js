@@ -34,4 +34,4 @@ class DeleteButton {
    }
 }
 
-export default DeleteButton;
+//export default DeleteButton;

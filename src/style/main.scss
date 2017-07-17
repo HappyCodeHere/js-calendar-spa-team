@@ -10,6 +10,10 @@ body {
   height: 30px;
 }
 
+.navbar-nav > li > a.my-top-btn {
+  line-height: 4px;
+}
+
 footer {
   margin-top: 50px;
   margin-bottom: 30px;
@@ -48,4 +52,48 @@ ul {
   }
   width: 700px;
   margin: 0 auto;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  //border: 1px solid rgba(0,0,0,0.1);
+}  
+
+.my-login {
+  margin-bottom: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin-heading {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.event-form {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  min-height: 300px;
+}
+
+.content {
+  height: 150px;
+  background: #ffdbc5;
+  padding: 15px;
+}
+
+.wrong-pass::-webkit-input-placeholder {
+  color: red;
 }
