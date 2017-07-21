@@ -117,6 +117,7 @@ class Calendar {
     this.element.innerHTML = '';
     this.renderCalendarHeader();
     this.renderCalendar();
+    db.loadEventsFromDB();
   }
   
   show() {
