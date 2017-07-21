@@ -145,7 +145,7 @@ class DB {
                     for (let dateLoad in obj) {
                         debugger;
                         let loadData = obj[`${dateLoad}`].title;
-                        let res = cal.querySelector(`#${dateLoad});
+                        let res = cal.querySelector(`#${dateLoad}`);
                         if (res != null) {
                             if (loadData.length - 1 == 0) {
                                 res.innerHTML += `<div>${loadData}<button class="cross">[x]</button></div>`;
