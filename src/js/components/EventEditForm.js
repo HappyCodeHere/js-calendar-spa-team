@@ -24,7 +24,6 @@ class EventEditForm {
     if (this.event.id) {
       db.updateEvent(this.event);
     } else {
-      debugger;
       db.saveEventInDB(this.event.text, this.event.cellId)
       // db.addEvent(this.event);
     }
@@ -73,11 +72,11 @@ class EventEditForm {
       <div class="content" contenteditable></div>\
     </div>';
 
-    this.element.appendChild(this.eventForm); 
+    this.element.appendChild(this.eventForm);
     var self = this;
     this.eventForm.querySelector('.btn-info').addEventListener('click', function() { self.handleSubmit(); });
     this.eventForm.querySelector('.btn-danger').addEventListener('click', function() { self.handleDelete(); });
-    
+
   }
 }
 

@@ -92,7 +92,6 @@ class DB {
     }
 
     addData(key, ref, obj, taskTitle, dateDay) {
-        debugger;
         ref.on(
             "value",
             function (snapshot) {
@@ -143,7 +142,6 @@ class DB {
                     obj = JSON.parse(obj);
                     let cal = document.querySelector("table");
                     for (let dateLoad in obj) {
-                        debugger;
                         let loadData = obj[`${dateLoad}`].title;
                         let res = cal.querySelector(`#${dateLoad}`);
                         if (res != null) {
@@ -169,7 +167,6 @@ class DB {
     }
 
     deleteEventInDB(dateDay, text) {
-        debugger;
         if (dateDay == "") return;
         let key = sessionStorage.getItem("key");
         let ref = firebase.database().ref();
