@@ -1,5 +1,7 @@
 Ссылка [myjscoursetasks.surge.sh](http://myjscoursetasks.surge.sh)
 
+Короче проект завален) Но было весело)
+
 
 ## Calendar SPA
 
