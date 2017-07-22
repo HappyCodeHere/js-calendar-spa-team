@@ -24,7 +24,9 @@ class EventEditForm {
     if (this.event.id) {
       db.updateEvent(this.event);
     } else {
-      db.addEvent(this.event);
+      debugger;
+      db.saveEventInDB(this.event.text, this.event.cellId)
+      // db.addEvent(this.event);
     }
     this.eventForm.style.display = 'none';
     cal.render();
